@@ -49,6 +49,9 @@ jobs:
         with:
           path: ./site/
 
-      - name: Deploy to GitHub Pages 🚀
-        id: deployment
-        uses: actions/deploy-pages@v4
+      # download artifacts for now
+      # pages will be added later
+      #
+      # - name: Deploy to GitHub Pages 🚀
+      #   id: deployment
+      #   uses: actions/deploy-pages@v4
