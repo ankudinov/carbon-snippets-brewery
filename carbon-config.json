@@ -89,7 +89,7 @@
       "squaredImage": false,
       "hiddenCharacters": false,
       "name": "",
-      "highlights": null,
+      "highlights": {"background":"linear-gradient(to bottom, #100000, #434343)"},
       "width": "480"
     },
     "one-light": {
