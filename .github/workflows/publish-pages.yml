@@ -30,7 +30,7 @@ jobs:
           npm i -g carbon-now-cli
           cd carbon-snippets
           for filename in *; do
-            carbon-now ${filename} --save-to ../img/ --save-as ${filename}  --config ../carbon-config.json -p deep-space;
+            carbon-now ${filename} --save-to ../img --save-as ${filename}  --config ../carbon-config.json -p deep-space;
           done
 
       - name: Build Directories and Copy images 🖼️
