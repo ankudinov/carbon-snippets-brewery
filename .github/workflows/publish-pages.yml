@@ -6,6 +6,7 @@ on:
     paths:
     - carbon-snippets/**
     - .github/workflows/publish-pages.yml
+    - carbon-config.json
   workflow_dispatch:
     branches: [master]
 permissions:
