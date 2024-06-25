@@ -2,11 +2,11 @@ name: marp-and-mkdocs-to-pages
 concurrency: marp-and-mkdocs-to-pages
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
     paths:
     - carbon-snippets/**
   workflow_dispatch:
-    branches: [main]
+    branches: [master]
 permissions:
   contents: write
   pages: write
@@ -31,7 +31,6 @@ jobs:
           for filename in *; do
             carbon-now ${filename} --save-to ../img/ --save-as ${filename}  --config ../carbon-config.json -p deep-space;
           done
-
 
       - name: Build Directories and Copy images 🖼️
         run: |
