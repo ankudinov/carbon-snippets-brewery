@@ -70,7 +70,7 @@
       "backgroundImage": "null",
       "backgroundImageSelection": null,
       "backgroundMode": "color",
-      "backgroundColor": "rgba(0, 40, 42, 53)",
+      "backgroundColor": "rgb(40, 42, 53)",
       "dropShadow": true,
       "dropShadowOffsetY": "20px",
       "dropShadowBlurRadius": "68px",
