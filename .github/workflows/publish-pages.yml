@@ -35,6 +35,7 @@ jobs:
 
       - name: Build Directories and Copy images 🖼️
         run: |
+          mkdir site \
           mkdir site/img \
           && cp -R img site/img
 
