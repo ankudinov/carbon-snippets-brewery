@@ -31,7 +31,7 @@ jobs:
           cd carbon-snippets
           for THEME in $(jq 'keys_unsorted' ../carbon-config.json | grep -v -e "\[" -e "\]" | tr -d '"",'); do
             for filename in *; do
-              carbon-now ${filename} --save-to ../img --save-as ${filename}-${THEME}  --config ../carbon-config.json -p ${THEME}
+              carbon-now ${filename} --save-to ../img --save-as ${filename}-${THEME}  --config ../carbon-config.json -p ${THEME} --headless
             done
           done
 
