@@ -29,8 +29,10 @@ jobs:
         run: |
           npm i -g carbon-now-cli
           cd carbon-snippets
-          for filename in *; do
-            carbon-now ${filename} --save-to ../img --save-as ${filename}  --config ../carbon-config.json -p deep-space;
+          for THEME in $(jq 'keys_unsorted' carbon-config.json | grep -v -e "\[" -e "\]" | tr -d '"",'); do
+            for filename in *; do
+              carbon-now ${filename} --save-to ../img --save-as ${filename}-${THEME}  --config ../carbon-config.json -p ${THEME}
+            done
           done
 
       - name: Build Directories and Copy images 🖼️
